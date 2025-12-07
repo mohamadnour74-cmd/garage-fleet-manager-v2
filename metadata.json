@@ -1,0 +1,5 @@
+{
+  "name": "Garage Fleet Manager",
+  "description": "A comprehensive fleet management tool for internal company garages. Track vehicles, equipment, maintenance history, and service schedules.",
+  "requestFramePermissions": []
+}
