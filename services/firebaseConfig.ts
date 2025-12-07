@@ -1,24 +1,21 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// NOTE: This configuration uses a placeholder or invalid API Key.
-// To make the app work with a real cloud database:
-// 1. Go to console.firebase.google.com
-// 2. Create a project
-// 3. Enable Firestore and Authentication (Anonymous)
-// 4. Paste your real keys below.
-export const firebaseConfigRaw = {
-  apiKey: "AIzaSyA8IU4dWkvfFPCAJ2eY41hDK9Pz-vWg",
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA0iU44wDkwfFQC4_j2eYq1HNX5gPz-WVg",
   authDomain: "garage-fleet-manager.firebaseapp.com",
   projectId: "garage-fleet-manager",
-  storageBucket: "garage-fleet-manager.appspot.com",
-  messagingSenderId: "622242556594",
-  appId: "1:622242556594:web:2379faae03de96512abc95",
-  measurementId: "G-9RQv63W0W"
+  storageBucket: "garage-fleet-manager.firebasestorage.app",
+  messagingSenderId: "622242559504",
+  appId: "1:622242559504:web:2379aee03dd9e5152abc95",
+  measurementId: "G-QGR6V33WMM"
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfigRaw);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
